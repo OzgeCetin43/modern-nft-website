@@ -1,0 +1,14 @@
+.button {
+  background-color: #fff;
+  color: #212121;
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  outline: none;
+}

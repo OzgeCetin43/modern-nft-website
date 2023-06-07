@@ -1,0 +1,130 @@
+.top_collections_container {
+  margin: 5rem auto;
+  width: 82%;
+}
+
+.top_collections_header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.top_collections_title {
+  font-size: 2.5rem;
+}
+
+.top_collections_description {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.collection_items {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.collection_item {
+  width: 33%;
+  position: relative;
+}
+
+.collection_main {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.collection_item_inner {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+}
+
+.collection_item_creator_container {
+  display: flex;
+  align-items: center;
+}
+
+.collection_item_creator_container img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #212121;
+  border-radius: 50%;
+  padding: 0.25rem;
+  margin-right: 1rem;
+}
+
+.collection_item_creator_container small {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.collections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collections img {
+  width: 33.333%;
+}
+
+.more_collection_container {
+  width: 33%;
+  background-color: rgba(33, 33, 33, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+}
+
+.more_collection_container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.more_collection_container a {
+  color: #212121;
+  margin: 1rem 0;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 920px) {
+  .top_collections_container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .top_collections_header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top_collections_title {
+    font-size: 1.5rem;
+  }
+
+  .top_collections_description {
+    font-size: 1rem;
+  }
+
+  .collection_items {
+    flex-direction: column;
+  }
+
+  .collection_item,
+  .more_collection_container {
+    width: 100%;
+  }
+
+  .more_collection_container {
+    height: 200px;
+  }
+}

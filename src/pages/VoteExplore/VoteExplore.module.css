@@ -1,0 +1,81 @@
+.vote_explore_container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 82%;
+  margin: 5rem auto;
+}
+
+.vote_explore_left {
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+.vote_explore_left h2 {
+  margin: 1rem 0;
+}
+
+.vote_explore_left a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.vote_explore_right {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.vote_explore_item {
+  width: 49%;
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.vote_explore_item svg {
+  width: 100px;
+  height: 100px;
+}
+
+.vote_explore_item:hover {
+  box-shadow: 1px 1px 1px 5px rgba(33, 33, 33, 0.2);
+}
+
+@media (max-width: 920px) {
+  .vote_explore_container {
+    margin: 1rem auto;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .vote_explore_left,
+  .vote_explore_right {
+    width: 100%;
+  }
+
+  .vote_explore_right {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .vote_explore_item {
+    width: 100%;
+  }
+}

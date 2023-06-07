@@ -1,0 +1,144 @@
+.upload_item_container {
+  margin: 5rem auto;
+  width: 82%;
+}
+
+.upload_item_description {
+  margin: 0.5rem 0;
+}
+
+.upload_item_container hr {
+  margin: 1rem 0;
+}
+
+.upload_file_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 2px dashed #212121;
+}
+
+.upload_file_container svg {
+  width: 35px;
+  height: 35px;
+}
+
+.input_file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.input_file + label {
+  font-weight: bolder;
+}
+
+.input_file:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.input_file + label * {
+  pointer-events: none;
+}
+
+.upload_item_info_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.upload_item_info_container div h3 {
+  margin: 0.5rem 0;
+}
+
+.upload_item_info_container div input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+}
+
+.upload_item_info_container small {
+  margin: 0.5rem 0;
+}
+
+.upload_item_info_container div textarea {
+  border: 2px solid #212121;
+  width: 100%;
+  border-radius: 0.25rem;
+  resize: none;
+}
+
+.collection_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.collection_item {
+  width: 24%;
+  border: 2px solid #212121;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #212121;
+}
+
+.collection_item:first-child {
+  color: #7ec7fe;
+}
+
+.collection_item img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.collection_item:nth-child(2) {
+  color: #ecc0c8;
+}
+
+.collection_item:nth-child(3) {
+  color: #f7edb8;
+}
+
+.collection_item:last-child {
+  color: #f6cde6;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 920px) {
+  .upload_item_container {
+    margin: 1rem auto;
+    width: 90%;
+  }
+
+  .collection_container {
+    flex-direction: column;
+  }
+
+  .collection_item {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}

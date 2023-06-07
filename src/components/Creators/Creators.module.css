@@ -1,0 +1,114 @@
+.cretors_container {
+  width: 82%;
+  margin: 5rem auto;
+}
+
+.creators_title {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+.filter_buttons {
+  width: 75%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #212121;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filter_buttons button {
+  width: 30%;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-weight: bolder;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.filter_buttons button svg {
+  margin-right: 1rem;
+}
+
+.creators {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.creator {
+  width: 23%;
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.creator_bg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.creator_image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: relative;
+  top: -4rem;
+  margin-bottom: -4rem;
+}
+
+.creator_name {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.creator_description {
+  padding: 1rem;
+}
+
+@media (max-width: 920px) {
+  .cretors_container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .creators_title {
+    font-size: 1.5rem;
+  }
+
+  .creators {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .creator {
+    width: 100%;
+  }
+
+  .filter_buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .filter_buttons button {
+    width: 100%;
+  }
+}

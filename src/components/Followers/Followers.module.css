@@ -1,0 +1,104 @@
+.followers_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.followers_header a {
+  color: #212121;
+  font-size: 2rem;
+}
+
+.followers_container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.followers_container_left {
+  width: 20%;
+}
+
+.followers_container_right {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.follower_item {
+  width: 80%;
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.follower_item_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.follower_name_container {
+  margin-right: 2rem;
+}
+
+.follower_item_info img {
+  width: 100px;
+  height: 100px;
+}
+
+.follower_info_inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.follow_button {
+  width: 25%;
+  background-color: #212121;
+  color: #fff;
+  padding: 1rem;
+  font-weight: bolder;
+  border-radius: 0.25rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  .followers_container_left,
+  .followers_container_right {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .followers_container {
+    flex-direction: column;
+  }
+
+  .follower_item {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .follower_item_info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .follow_button {
+    margin-top: 1rem;
+  }
+}

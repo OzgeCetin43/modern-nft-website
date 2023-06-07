@@ -1,0 +1,122 @@
+.collection_filters_container {
+  width: 82%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.filter_item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #cdd9ed;
+  gap: 1rem;
+  border-radius: 0.25rem;
+  color: #212121;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter_item label {
+  margin-left: 1rem;
+}
+
+.filter {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  background-color: #fff;
+  width: 350px;
+  padding: 1rem;
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal_slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+}
+
+.example_track {
+  top: 1.25rem;
+  height: 10px;
+  background-color: #cdd9ed;
+  border-radius: 0.25rem;
+}
+
+.example_thumb {
+  top: 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: #fff;
+  color: #212121;
+  cursor: pointer;
+  border: 2px solid #212121;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.fields {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.field span {
+  border: 2px solid #212121;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.actions {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  background-color: #212121;
+  color: #fff;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 920px) {
+  .collection_filters_container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .filter_item {
+    width: 100%;
+  }
+
+  .filter {
+    width: 100%;
+    z-index: 99999;
+  }
+}

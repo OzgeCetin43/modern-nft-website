@@ -1,0 +1,75 @@
+.audio_small_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.audio_small_container img {
+  height: 225px;
+  width: 225px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.audio_number {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.audio_price {
+  border: 2px solid #212121;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  font-weight: bolder;
+  position: relative;
+  text-align: center;
+}
+
+.audio_price small {
+  background-color: #fff;
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+}
+
+.stock {
+  text-align: center;
+  display: block;
+  margin: 1rem 0;
+}
+
+.audio_info_container svg {
+  background-color: #212121;
+  color: #fff;
+  padding: 1rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  .audio_small_container img {
+    height: 210px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+  }
+
+  .audio_number {
+    text-align: center;
+  }
+
+  .audio_info_container svg {
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
+  }
+}

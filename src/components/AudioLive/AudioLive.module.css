@@ -1,0 +1,62 @@
+.audio_live_container {
+  width: 82%;
+  margin: 5rem auto;
+}
+
+.audio_live_title {
+  font-size: 2.5rem;
+}
+
+.audio_live_description {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.audio_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audio_live_container_left {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.audio_live_container_right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 920px) {
+  .audio_live_container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .audio_live_title {
+    font-size: 1.5rem;
+  }
+
+  .audio_live_description {
+    font-size: 1rem;
+  }
+
+  .audio_container {
+    flex-direction: column-reverse;
+  }
+
+  .audio_live_container_left {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .audio_live_container_right {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

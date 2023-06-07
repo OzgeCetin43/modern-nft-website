@@ -1,0 +1,144 @@
+.dashboard_container {
+  margin: 5rem auto;
+  width: 82%;
+}
+
+.dashboard_header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.currency_item,
+.currency_item_creator {
+  width: 19%;
+  border: 2px solid #212121;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.currency_item h3,
+.currency_item_creator h4 {
+  text-transform: uppercase;
+}
+
+.currency_item img {
+  margin: 1rem 0;
+  height: 150px;
+}
+
+.currency_item:first-child {
+  background-color: #fdedd4;
+}
+
+.currency_item:nth-child(2) {
+  background-color: #e1f9f1;
+}
+
+.currency_item:nth-child(3) {
+  background-color: #dbe3ff;
+}
+
+.currency_item:nth-child(4) {
+  background-color: #fbf5d5;
+}
+
+.currency_info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.increase {
+  color: #fff;
+  font-weight: bolder;
+  background-color: #10d876;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.decrease {
+  color: #fff;
+  font-weight: bolder;
+  background-color: #e4405f;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.currency_item_creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currency_item_creator img {
+  margin-bottom: 1rem;
+}
+
+.top_balance_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 2px dashed #212121;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.charts_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.chart_container {
+  width: 49%;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.25rem;
+}
+
+.top_cryptocurrency_title {
+  margin: 1rem 0;
+}
+
+.coin_name {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 920px) {
+  .dashboard_container {
+    margin: 1rem auto;
+    width: 90%;
+  }
+
+  .dashboard_header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .currency_item,
+  .currency_item_creator {
+    width: 100%;
+  }
+
+  .charts_container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .chart_container {
+    width: 100%;
+  }
+
+  .top_cryptocurrency_title {
+    display: none;
+  }
+}
